@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>小时代3：刺金时代</title>
+    <meta charset="utf-8" />
+    <meta name="apple-touch-fullscreen" content="YES" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta http-equiv="pragram" content="no-cache" />
+    <link rel="Shortcut Icon" href=" http://www.letv.com/favicon.ico"/>
+    <link rel="stylesheet" href="http://css.letvcdn.com/css/201407/11/webapp_174101/global.css"/>
+    <link rel="stylesheet" type="text/css" href="http://css.letvcdn.com/css/201407/22/1159/xiaoshidai.css" />
+    
+    <script type="text/javascript">
+        var phoneWidth = parseInt(window.screen.width);
+        var phoneScale = phoneWidth/640;
+
+        var ua = navigator.userAgent;
+        if (/Android (\d+\.\d+)/.test(ua)){
+            var version = parseFloat(RegExp.$1);
+            // andriod 2.3
+            if(version>2.3){
+                document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+            // andriod 2.3以上
+            }else{
+                document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+            }
+            // 其他系统
+        } else {
+            document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+        }
+    </script>
+    <script>
+        navigator.userAgent.match(/Android/) && (function(d) {
+            var width = window.innerWidth, style = d.createElement('style');
+            style.innerHTML = '#j-scroller li{width:' + width + 'px}';
+            d.getElementsByTagName('head')[0].appendChild(style)
+        })(document);
+    </script>
+    <!--移动端版本兼容 end -->
+</head>
+
+<body class='s-bg-ddd'>
+    <!-- 声音控件 -->
+    <section class='u-audio f-hide' data-src='http://g3.letv.cn/73/13/25/wasucn/0/storage/xiaoshidai3.m4a?b=589&mmsid=1488724&tm=1403664900&key=e1d2a49ade70201d50fa627845dcf2d1&platid=3&splatid=302&playid=2&tss=no&vtype=13&cvid=499228608110&sign=mb&dname=mobile&tag=mobile&termid=2&pay=0&ostype=android&hwtype=iphone&format=0&expect=1'>
+        <p id='coffee_flow' class="btn_audio">
+            <strong class='txt_audio z-hide'>关闭</strong>
+            <span class='css_sprite01 audio_open'></span>
+        </p>
+    </section>
+    <!-- 声音控件 end-->    
+    <!-- 箭头指示引导 -->
+    <section class='u-arrow f-hide'><p class="xsd_bg ico_arrow"></p></section>
+    <!-- 箭头指示引导 end-->    
+    <!--<section class="u-share f-hide"><p></p></section>-->
+    <!-- page页面内容 -->
+    <section class='p-ct'>
+        <!-- 旋转正面 -->
+        <div id="j-mengban" class='translate-front'>
+            <div class='mengban-warn'></div>
+        </div>
+        <!-- 旋转正面 end-->
+        <!-- 旋转反面 -->
+        <div class='translate-back f-hide'>
+            <!-- 封页 1-->
+                <!-- 擦一擦 --><input id="ca-tips"   type="hidden" value="" />
+                <!-- 蒙板背景图 --><!--<input id="r-cover"    type="hidden" value='http://i1.letvimg.com/img/201407/03/1456/img0.jpg' />-->
+            <div class='m-page m-fengye f-hide' data-page-type='info_pic3' data-statics='info_pic3'>
+                <div class="page-con lazy-img" data-src='http://i2.letvimg.com/img/201407/22/1207/headers.jpg' style="background-position: center center; ">
+                	<div class="letv_logo"><img src="http://i1.letvimg.com/img/201407/04/logo.png" /></div>
+                </div>
+                <!-- 微信 -->
+                <div class="bigTxt-btn bigTxt-btn-wx lazy-img" data-src="http://i3.letvimg.com/img/201407/21/1519/share.png"><a href="javascript:void(0)"></a></div>
+               
+                <!-- 微信 end-->
+                <div class="xsd_bg xsd_tit1"></div>
+                <div class="xsd_bg xsd_tit2"></div>
+                <div class="xsd_bg xsd_tit3"></div>
+            </div>
+            <!-- 封页 end-->
+            <div class='m-page m-bigTxt f-hide move_left' data-page-type='bigTxt' data-statics='info_list'>
+                <div class="page-con j-txtWrap lazy-img" data-src='http://i2.letvimg.com/img/201407/03/1456/img_bg.jpg' style="background-position: center top;background-size: 100%;">
+                    <div class="letv_logo"><img src="http://i1.letvimg.com/img/201407/04/logo.png" /></div>
+                        <div id="j_tips" class="tips">
+                          <div class="tips-ul">
+                            <div class="tips-bg"></div>
+                            <div  class="list">
+                                <ul class="rst">
+                                  
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                     <div class="wrap" style="height:100%;background:#000">
+                            <div class="singer">
+                                <div class="sgr-bg"><img src="http://i1.letvimg.com/img/201407/21/xsd-head_01/xsd-head_01.jpg" alt=""></div>
+                                <a href="/zt/xiaoshidai3_info/" class="btn-info"> </a>
+                            </div>
+                            <div class="box">
+                              <div class="left"><img src="http://i2.letvimg.com/img/201407/16/2105/12_03.jpg" /></div>
+                              <div class="right"><img src="http://i3.letvimg.com/img/201407/16/2114/13_04.jpg" /></div>
+                                   <div class="focus" id="j-slide-wrapper">
+                                    <ul class="fs-img" id="j-scroller" data-statectn="focus-m" data-itemhldr="li">
+                                      <li><a href="javascript:void(0)"><img src="http://i0.letvimg.com/css/201407/18/ylxsd/images/1.jpg" alt="" /><span class="s-bg"></span><span class="s-txt"><span class="n-info" id="ft">林萧X顾里</span>
+                                        <span class="zan"><img src="http://i3.letvimg.com/img/201407/16/2051/xin.png" />赞</span></span></a> </li>
+                                      <li><a href="javascript:void(0)"><img src="http://i0.letvimg.com/css/201407/18/ylxsd/images/2.jpg" alt="" /><span class="s-bg"></span><span class="s-txt"><span class="n-info" id="ft">顾源X崇光</span><span class="zan"><img src="http://i3.letvimg.com/img/201407/16/2051/xin.png" />赞</span></span></a> </li>
+                                      <li><a href="javascript:void(0)"><img src="http://i3.letvimg.com/css/201407/18/ylxsd/images/3.jpg" alt="" /><span class="s-bg"></span><span class="s-txt"><span class="n-info" id="ft">宫洺 X 南湘</span><span class="zan"><img src="http://i3.letvimg.com/img/201407/16/2051/xin.png" />赞</span></span></a> </li>
+                                      <li><a href="javascript:void(0)"><img src="http://i2.letvimg.com/css/201407/18/ylxsd/images/4.jpg" alt="" /><span class="s-bg"></span><span class="s-txt"><span class="n-info" id="ft">Neil X 唐宛如</span><span class="zan"><img src="http://i3.letvimg.com/img/201407/16/2051/xin.png" />赞</span></span></a> </li>
+
+                                    </ul>
+                                  </div>
+                           </div>
+                            <div class="singer">
+                                <div class="sgr-bg"><img src="http://i3.letvimg.com/img/201407/21/xsd-bot_02_02/xsd-bot_02_02.jpg" alt=""></div>
+                            </div>
+                        </div>
+                   
+                 <div class="bigTxt-btn bigTxt-btn-wx lazy-img"  style="bottom:-16px;" data-src="http://i3.letvimg.com/img/201407/21/1631/share1.png"><a href="javascript:void(0)"></a></div>
+                 <div class="bigTxt-btn lazy-img bigTxt-btn-dl" style="bottom:-16px;" data-src="http://i1.letvimg.com/img/201407/21/1631/dl1.png"><a href="http://m.letv.com/xsd.html"></a></div>
+                
+                   
+                </div>
+
+                
+                <!-- 微信 end-->
+                <div class="u-simg"><i></i><i class="cur"></i><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <!-- 大图文 end-->
+            <!-- 大图文1-->
+            <div class='m-page m-bigTxt f-hide move_left' data-page-type='bigTxt' data-statics='info_list'>
+                <div class="page-con j-txtWrap lazy-img" data-src='http://i2.letvimg.com/img/201407/03/1456/img_bg.jpg' style="background-position: center top;background-size: 100%;">
+                	<div class="xsd_player1">
+                    	<img img-src="http://i1.letvimg.com/img/201407/04/1720/i11.jpg" />
+                        <span>男色无边、美女谍战，最激情绚丽的一集等你来看！</span>
+                    	<div class="btn_play" data-vid="20193121"></div>
+                    </div>
+                    <div class="xsd_player1 xsd_player2">
+                    	<img img-src="http://i1.letvimg.com/img/201407/04/1720/i22.jpg" />
+                        <span>无节操幕后花絮大曝光，限制级尺度挑战底线!</span>
+                        <div class="btn_play" data-vid="20174587"></div>
+                    </div>
+                    <div class="xsd_bg xsd_left_tit1"></div>
+                </div>
+                <!-- 微信 -->
+                <div class="bigTxt-btn bigTxt-btn-wx lazy-img" data-src="http://i3.letvimg.com/img/201407/21/1519/share.png"><a href="javascript:void(0)"></a></div>
+                
+                <!-- 微信 end-->
+                <div class="u-simg"><i></i><i></i><i class="cur"></i><i></i><i></i><i></i><i></i></div>
+                <div class="xsd_bg xsd_tit4"></div>
+            </div>
+            <!-- 大图文 end-->
+            
+            <!-- 大图文2-->
+            <div class='m-page m-bigTxt f-hide move_right' data-page-type='bigTxt' data-statics='info_list'>
+                <div class="page-con j-txtWrap lazy-img" data-src='http://i2.letvimg.com/img/201407/03/1456/img_bg.jpg' style="background-position: center top;background-size: 100%;">
+                	
+                    <div class="xsd_player1">
+                    	<img img-src="http://i3.letvimg.com/img/201407/04/1720/i33.jpg" />
+                        <span>顾里全新升级衣帽间大曝光，好想抢走哦！</span>
+                    	<div class="btn_play" data-vid="20104307"></div>
+                    </div>
+                    <div class="xsd_player1 xsd_player2">
+                    	<img img-src="http://i3.letvimg.com/img/201407/04/1720/i44.jpg" />
+                        <span>蔡依林倾情献唱主题曲《万花瞳》，跟随歌声享受生活！</span>
+                        <div class="btn_play" data-vid="20149958"></div>
+                    </div>
+                    <div class="xsd_bg xsd_left_tit2"></div>
+                </div>
+                <!-- 微信 -->
+                <div class="bigTxt-btn bigTxt-btn-wx lazy-img" data-src="http://i3.letvimg.com/img/201407/21/1519/share.png"><a href="javascript:void(0)"></a></div>
+                
+                <!-- 微信 end-->
+                <div class="u-simg"><i></i><i></i><i></i><i class="cur"></i><i></i><i></i><i></i></div>
+                <div class="xsd_bg xsd_tit5"></div>
+            </div>
+            <!-- 大图文 end-->
+            <!-- 大图文 3-->
+            <div class='m-page m-bigTxt f-hide move_left' data-page-type='bigTxt' data-statics='info_list'>
+                <div class="page-con j-txtWrap lazy-img" data-src='http://i2.letvimg.com/img/201407/03/1456/img_bg.jpg' style="background-position: center top;background-size: 100%;">
+                	
+                    <div class="xsd_player1">
+                    	<img img-src="http://i0.letvimg.com/img/201407/04/1720/i55.jpg" />
+                        <span>四姐妹台前幕后其乐融融、闺蜜情感升级大起底！</span>
+                    	<div class="btn_play" data-vid="20093518"></div>
+                    </div>
+                    <div class="xsd_player1 xsd_player2">
+                    	<img img-src="http://i1.letvimg.com/img/201407/04/1720/i66.jpg" />
+                        <span>他是吃货、麦霸，暖男，他是“男版顾里”，他是郭敬明。</span>
+                        <div class="btn_play" data-vid="20126439"></div>
+                    </div>
+                    <div class="xsd_bg xsd_left_tit3"></div>
+                </div>
+                <!-- 微信 -->
+                <div class="bigTxt-btn bigTxt-btn-wx lazy-img" data-src="http://i3.letvimg.com/img/201407/21/1519/share.png"><a href="javascript:void(0)"></a></div>
+                
+                <!-- 微信 end-->
+                <div class="u-simg"><i></i><i></i><i></i><i></i><i class="cur"></i><i></i><i></i></div>
+                <div class="xsd_bg xsd_tit6"></div>
+            </div>
+            <!-- 大图文 end-->
+            <!-- 大图文4-->
+            <div class='m-page m-bigTxt f-hide move_right' data-page-type='bigTxt' data-statics='info_list'>
+                <div class="page-con j-txtWrap lazy-img" data-src='http://i2.letvimg.com/img/201407/03/1456/img_bg.jpg' style="background-position: center top;background-size: 100%;">
+                    <div class="xsd_player1">
+                    	<img img-src="http://i1.letvimg.com/img/201407/04/1720/i77.jpg" />
+                        <span>崇光生死成谜，姐妹为爱反目，更多悬念等你解开！</span>
+                    	<div class="btn_play" data-vid="20084526"></div>
+                    </div>
+                    <div class="xsd_player1 xsd_player2">
+                    	<img img-src="http://i0.letvimg.com/img/201407/04/1720/i88.jpg" />
+                        <!--<div class="btn_play"></div>-->
+                    </div>
+                    <div class="xsd_bg xsd_left_tit4"></div>
+                </div>
+                <!-- 微信 -->
+                <div class="bigTxt-btn bigTxt-btn-wx lazy-img" data-src="http://i3.letvimg.com/img/201407/21/1519/share.png"><a href="javascript:void(0)"></a></div>
+               
+                <!-- 微信 end-->
+                <div class="u-simg"><i></i><i></i><i></i><i></i><i></i><i class="cur"></i><i></i></div>
+                <div class="xsd_bg xsd_tit7"></div>
+            </div>
+            <!-- 大图文 end-->
+            <!-- 大图文5-->
+            <div class='m-page m-bigTxt f-hide move_left' data-page-type='bigTxt' data-statics='info_list'>
+                <div class="page-con j-txtWrap lazy-img" data-src='http://i2.letvimg.com/img/201407/03/1456/img_bg.jpg' style="background-position: center top;background-size: 100%;">
+                	<div class="xsd_player1">
+                    	<img img-src="http://i0.letvimg.com/img/201407/04/1720/i99.jpg" />
+                        <span>小时代1：折纸时代  乐视网独家在线观看</span>
+                    	<div class="btn_play" data-vid="2100756"></div>
+                    </div>
+                    <div class="xsd_player1 xsd_player2">
+                    	<img img-src="http://i3.letvimg.com/img/201407/04/1720/i1010.jpg" />
+                        <span>小时代2：青木时代  乐视网独家在线观看</span>
+                        <div class="btn_play" data-vid="2067714"></div>
+                    </div>
+                </div>
+                <!-- 微信 -->
+                <div class="bigTxt-btn bigTxt-btn-wx lazy-img" data-src="http://i3.letvimg.com/img/201407/21/1519/share.png"><a href="javascript:void(0)"></a></div>
+               
+                <!-- 微信 end-->
+                <div class="u-simg"><i></i><i></i><i></i><i></i><i></i><i></i><i class="cur"></i></div>
+                <div class="xsd_bg xsd_tit8"></div>
+            </div>
+            <!-- 大图文 end-->     
+
+
+            <!-- 大图文 end-->       
+
+        </div>
+        <!-- 旋转反面 end-->
+    </section>
+    <!-- 正文介绍 end-->
+    
+    <!--pageLoading-->
+    <section class="u-pageLoading" style="display:block;">
+        <img src="http://i2.letvimg.com/img/201407/03/load.gif" alt="loading" />
+    </section>
+    <!--pageLoading end-->
+    <!-- 资源传递 -->
+    <!-- 模版ID --><input id="activity_id" type="hidden" value='' />  
+    <!-- 微信分享信息 --><input id="r-wx-title" type="hidden" value="#小时代走着瞧#居然有专门给《小时代》定制的乐视视频•小时代版APP！http://m.letv.com/xsd.html 独乐乐不如众乐乐，和每益添一起乱点鸳鸯谱，超级电视S50Air等你来抢！" />
+    <!-- 微信分享信息 --><input id="r-wx-img"   type="hidden" value="http://i2.letvimg.com/img/201407/03/xsd_wx.png" />
+    <!-- 微信分享信息 --><input id="r-wx-con"   type="hidden" value="《#小时代走着瞧#居然有专门给《小时代》定制的乐视视频•小时代版APP！http://m.letv.com/xsd.html 独乐乐不如众乐乐，和每益添一起乱点鸳鸯谱，超级电视S50Air等你来抢！" />
+    <div class="bigTxt-weixin"><img img-src="http://i2.letvimg.com/img/201407/03/1456/share.png"></div>
+    <!-- 资源传递 end-->
+	<script src="abc.js"></script>
+    <script src='base.js'></script>
+    <!--脚本加载-->
+    <script type="text/javascript" src="ylxsd.js">//__loadjs('ylxsd');</script> 
+    <!--<script type="text/javascript" src="xsd.js"></script>-->
+    <!--脚本加载 end--> 
+    </body>
+</html>
+
+

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html class="iphone">
+<head>
+<meta charset="utf-8">
+<link rel="dns-prefetch" href="//js.letvcdn.com">
+<link rel="dns-prefetch" href="//css.letvcdn.com">
+<link rel="dns-prefetch" href="//i0.letvimg.com">
+<link rel="dns-prefetch" href="//i1.letvimg.com">
+<link rel="dns-prefetch" href="//i2.letvimg.com">
+<link rel="dns-prefetch" href="//i3.letvimg.com">
+<link rel="Shortcut Icon" href=" http://www.letv.com/favicon.ico" />
+<title>手机乐视_商城_积分兑换</title>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<meta name="apple-touch-fullscreen" content="yes">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta name="apple-mobile-web-app-title" content="手机乐视">
+<meta name="baidu-tc-cerfication" content="" />
+<link rel="apple-touch-icon-precomposed" href="http://i1.letvimg.com/img/201310/09/appLetv.png"/>
+<link rel="stylesheet" href="http://css.letvcdn.com/css/201410/28/webapp_134803/global.css">
+<link rel="stylesheet" href="http://css.letvcdn.com/css/201410/28/webapp_134803/shop-list.css">
+</head>
+<script type="text/javascript">
+  var phoneWidth = parseInt(window.screen.width);
+  var phoneScale = phoneWidth/640; 
+  var ua = navigator.userAgent;
+  if (/Android (\d+\.\d+)/.test(ua)){
+    var version = parseFloat(RegExp.$1);
+    // andriod 2.3
+    if(version>2.3){
+      document.write('<meta name="viewport" content="width=640,minimal-ui, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+    // andriod 2.3以上
+    }else{
+      document.write('<meta name="viewport" content="width=640,minimal-ui, target-densitydpi=device-dpi">');      }
+    // 其他系统
+  } else {
+    document.write('<meta name="viewport" content="width=640,minimal-ui, user-scalable=no, target-densitydpi=device-dpi">');
+  }
+</script>
+<body>
+<header class="head">
+  <!--首页的头start-->
+  <div class="sco_h" style="display:none;" id="j_sco_h">
+    <p class="us_img"><img src="http://i0.letvimg.com/img/201410/28/1252/logo.jpg" /></p>
+    <h3>立即登录即可<span>赢积分</span>哦~</h3>
+    <p class="r_img"><img src="http://i2.letvimg.com/img/201410/28/1252/r.png" /></p>
+  </div>
+  <!--首页的头end-->
+  <!--登录后的的头start-->
+  <div class="sco_m"> <a href="javascript":;>
+    <div class="sco_l">
+      <p class="us_img"><img src="http://i0.letvimg.com/img/201410/28/1252/logo.jpg" /></p>
+      <h3>飞翔的小鱼</h3>
+    </div>
+    <div class="sco_r">
+      <p><img src="http://i1.letvimg.com/img/201410/28/1252/coin.png" /><span>189900</span></p>
+      <p>我的宝贝></p>
+    </div>
+    </a> </div>
+  <!--登录后的的头end-->
+</header>
+<!--焦点图-->
+<div id="j-slide-wrapper" class="focus">
+  <ul id="j-scroller" class="fs-img">
+    <li>
+      <div class="j-scroller-content"> <a href="javascript:;"> <img src="http://i2.letvimg.com/user/201409/17/1256fe3588b84455b9751044e3ae8666.jpg"> </a> </div>
+    </li>
+    <li>
+      <div class="j-scroller-content"> <a href="javascript:;"> <img src="http://i0.letvimg.com/user/201409/17/51046dd41f634be2aefeffa44a63365f.jpg"> </a></div>
+    </li>
+    <li>
+      <div class="j-scroller-content"> <a href="javascript:;"> <img src="http://i2.letvimg.com/user/201409/17/6e5fe381560a4a4bb0ecef64ecb00a9e.jpg"> </a></div>
+    </li>
+  </ul>
+  <ul id="j-pointer" class="fs-doc">
+    <li class="active"></li>
+    <li class=""></li>
+    <li class=""></li>
+  </ul>
+</div>
+<!--积分互动部分start-->
+<div class="goods">
+  <dl id="j_cj">
+    <a href="javascript:;">
+    <dt><img src="http://i1.letvimg.com/img/201410/28/1337/jiang1.png" /></dt>
+    <dd>抽大奖</dd>
+    </a>
+  </dl>
+  <dl id="j_dj">
+    <a href="javascript:;">
+    <dt><img src="http://i3.letvimg.com/img/201410/28/1252/jiang2.png" /></dt>
+    <dd>兑商品</dd>
+    </a>
+  </dl>
+  <dl id="j_jf">
+    <a href="javascript:;">
+    <dt><img src="http://i2.letvimg.com/img/201410/28/1337/jiang3.png" /></dt>
+    <dd>赚积分</dd>
+    </a>
+  </dl>
+</div>
+<!--积分互动部分end-->
+<!--兑换商品展示位start-->
+<div class="exh" style=" display:none;">
+  <ul>
+    <li class="act_red"><a href="javascript:;">全部</a></li>
+    <li><a href="javascript:;">我能兑换</a></li>
+    <li><a href="javascript:;">超值精品</a></li>
+  </ul>
+</div>
+<!--兑换商品展示位end-->
+<div class="home-main">
+  <div class="list-tittle"><span><a href="javascript:;"><img src="http://i3.letvimg.com/img/201410/28/1252/sx_btn.png" />换一组</a></span>
+    <h2>小乐推荐</h2>
+  </div>
+  <div class="list" data-statectn="list" data-itemhldr="dl">
+    <ul class="list-pic">
+      <li class="f-fl">
+        <div class="w20">&nbsp;</div>
+        <dl class="w290">
+          <dt><a title="" href="#"><img alt="" data-url="http://i0.letvimg.com/cms/201402/17/2e246600383bef4d6268ae2d816565ed1658.jpg" src="http://i2.letvimg.com/img/201410/28/1252/tu_05.jpg" /></a></dt>
+        </dl>
+        <div class="w10">&nbsp;</div>
+      </li>
+      <li class="f-fr">
+        <div class="w10">&nbsp;</div>
+        <dl class="w290">
+          <dt><a title="" href="#"><img alt="" data-url="http://i0.letvimg.com/cms/201402/17/2e246600383bef4d6268ae2d816565ed1658.jpg" src="http://i0.letvimg.com/img/201410/28/1252/tu_03.jpg" /></a></dt>
+        </dl>
+        <div class="w20">&nbsp;</div>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="home-main">
+  <div class="list-tittle"> <span><a href="javascript:;">更多></a></span>
+    <h2>我能兑换</h2>
+  </div>
+  <div class="list" data-statectn="list" data-itemhldr="dl">
+    <ul class="list-pic">
+      <li class="f-fl">
+        <div class="w20">&nbsp;</div>
+        <dl class="w290">
+          <dt><a title="" href="#">
+            <ul>
+              <li class="angle_o"><em></em></li>
+              <i>VIP</i>
+            </ul>
+            <img alt="" data-url="http://i0.letvimg.com/cms/201402/17/2e246600383bef4d6268ae2d816565ed1658.jpg" src="http://i3.letvimg.com/img/201410/28/1252/pic_07.png" /></a></dt>
+          <dd class="d-t"><a title="" href="#"><span class="f-fr"><img src="http://i1.letvimg.com/img/201410/28/1252/coin.png" />900</span>手机</a></dd>
+          <dd class="d-i">新用户免费</dd>
+        </dl>
+        <div class="w10">&nbsp;</div>
+      </li>
+      <li class="f-fr">
+        <div class="w10">&nbsp;</div>
+        <dl class="w290">
+          <dt><a title="" href="#">
+            <ul>
+              <li class="angle_b"><em></em></li>
+              <i>VIP</i>
+            </ul>
+            <img alt="" data-url="http://i0.letvimg.com/cms/201402/17/2e246600383bef4d6268ae2d816565ed1658.jpg" src="http://i3.letvimg.com/img/201410/28/1337/tu_09.png" /></a></dt>
+          <dd class="d-t"><a title="" href="#"><span class="f-fr"><img src="http://i1.letvimg.com/img/201410/28/1252/coin.png" />900</span>劳力士</a></dd>
+          <dd class="d-i">经典再现绝对超值</dd>
+        </dl>
+        <div class="w20">&nbsp;</div>
+      </li>
+      <li class="f-fl">
+        <div class="w20">&nbsp;</div>
+        <dl class="w290">
+          <dt><a title="" href="#">
+            <ul>
+              <li class="angle_g"><em></em></li>
+              <i>VIP</i>
+            </ul>
+            <img alt="" data-url="http://i0.letvimg.com/cms/201402/17/2e246600383bef4d6268ae2d816565ed1658.jpg" src="http://i1.letvimg.com/img/201410/28/1337/tu_12.png" /></a></dt>
+          <dd class="d-t"><a title="" href="#"><span class="f-fr"><img src="http://i1.letvimg.com/img/201410/28/1252/coin.png" />900</span>手机</a></dd>
+          <dd class="d-i">新用户免费</dd>
+        </dl>
+        <div class="w10">&nbsp;</div>
+      </li>
+      <li class="f-fr">
+        <div class="w10">&nbsp;</div>
+        <dl class="w290">
+          <dt><a title="" href="#">
+            <ul>
+              <li class="angle_r"><em></em></li>
+              <i>VIP</i>
+            </ul>
+            <img alt="" data-url="http://i0.letvimg.com/cms/201402/17/2e246600383bef4d6268ae2d816565ed1658.jpg" src="http://i0.letvimg.com/img/201410/28/1337/tu.png" /></a></dt>
+          <dd class="d-t"><a title="" href="#"><span class="f-fr"><img src="http://i2.letvimg.com/img/201410/28/1337/coin.png" />900</span>劳力士</a></dd>
+          <dd class="d-i">经典再现绝对超值</dd>
+        </dl>
+        <div class="w20">&nbsp;</div>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="home-main">
+  <div class="list-tittle"> <span><a href="javascript:;">更多></a></span>
+    <h2>超值精品</h2>
+  </div>
+  <div class="list" data-statectn="list" data-itemhldr="dl">
+    <ul class="list-pic">
+      <li class="f-fl">
+        <div class="w20">&nbsp;</div>
+        <dl class="w290">
+          <dt><a title="" href="#"><img alt="" data-url="http://i0.letvimg.com/cms/201402/17/2e246600383bef4d6268ae2d816565ed1658.jpg" src="http://i0.letvimg.com/img/201410/28/1337/tu_16.png" /></a></dt>
+          <dd class="d-t"><a title="" href="#"><span class="f-fr"><img src="http://i2.letvimg.com/img/201410/28/1337/coin.png" />900</span>摩托头盔</a></dd>
+          <dd class="d-i">新用户免费</dd>
+        </dl>
+        <div class="w10">&nbsp;</div>
+      </li>
+      <li class="f-fr">
+        <div class="w10">&nbsp;</div>
+        <dl class="w290">
+          <dt><a title="" href="#"><img alt="" data-url="http://i0.letvimg.com/cms/201402/17/2e246600383bef4d6268ae2d816565ed1658.jpg" src="http://i3.letvimg.com/img/201410/28/1337/tu_17.png" /></a></dt>
+          <dd class="d-t"><a title="" href="#"><span class="f-fr"><img src="http://i2.letvimg.com/img/201410/28/1337/coin.png" />900</span>劳力士</a></dd>
+          <dd class="d-i">经典再现绝对超值</dd>
+        </dl>
+        <div class="w20">&nbsp;</div>
+      </li>
+      <li class="f-fl">
+        <div class="w20">&nbsp;</div>
+        <dl class="w290">
+          <dt><a title="" href="#"><img alt="" data-url="http://i0.letvimg.com/cms/201402/17/2e246600383bef4d6268ae2d816565ed1658.jpg" src="http://i1.letvimg.com/img/201410/28/1337/tu_12.png" /></a></dt>
+          <dd class="d-t"><a title="" href="#"><span class="f-fr"><img src="http://i2.letvimg.com/img/201410/28/1337/coin.png" />900</span>手机</a></dd>
+          <dd class="d-i">新用户免费</dd>
+        </dl>
+        <div class="w10">&nbsp;</div>
+      </li>
+      <li class="f-fr">
+        <div class="w10">&nbsp;</div>
+        <dl class="w290">
+          <dt><a title="" href="#"><img alt="" data-url="http://i0.letvimg.com/cms/201402/17/2e246600383bef4d6268ae2d816565ed1658.jpg" src="http://i2.letvimg.com/img/201410/28/1337/tu_21.jpg" /></a></dt>
+          <dd class="d-t"><a title="" href="#"><span class="f-fr"><img src="http://i2.letvimg.com/img/201410/28/1337/coin.png" />900</span>劳力士</a></dd>
+          <dd class="d-i">经典再现绝对超值</dd>
+        </dl>
+        <div class="w20">&nbsp;</div>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="score_btn" id="j_sco_btn"><a href="javascript:;">去积分商城看更多></a></div>
+<div class="home-main">
+  <div class="list-tittle"> <span><a href="javascript:;">积分细则</a></span>
+    <h2>乐积分玩转攻略</h2>
+  </div>
+  <div class="score_rule">
+    <div class="sco">
+      <dl class="sco_img">
+        <dt><img src="http://i2.letvimg.com/img/201410/28/1337/1.png" /></dt>
+        <dd>做任务</dd>
+        <dd>赚取积分</dd>
+      </dl>
+      <dl class="r">
+        <dt><img src="http://i1.letvimg.com/img/201410/28/1337/b_r.png" /></dt>
+      </dl>
+      <dl class="sco_img">
+        <dt><img src="http://i0.letvimg.com/img/201410/28/1337/2.png" /></dt>
+        <dd>花积分</dd>
+        <dd>抽大奖兑商品</dd>
+      </dl>
+      <dl class="r">
+        <dt><img src="http://i1.letvimg.com/img/201410/28/1337/b_r.png" /></dt>
+      </dl>
+      <dl class="sco_img">
+        <dt><img src="http://i0.letvimg.com/img/201410/28/1337/3.png" /></dt>
+        <dd>收奖品</dd>
+        <dd>我的宝贝</dd>
+      </dl>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+<script src="js/zepto.js"></script>
+<script src="js/iscroll.js"></script>
+<!-- <script src="js/namespace.js"></script> -->
+<script src="js/underscore.js"></script>
+<script src="js/home.js"></script>
+<!-- 公共底部JS end -->
+<script>
+home.init();
+</script>
